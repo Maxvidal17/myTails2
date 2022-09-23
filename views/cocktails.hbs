@@ -1,0 +1,20 @@
+<section class="cocktail-section">
+    {{#each allCocktails}}
+
+    <div class="card border-dark space" style="width: 18rem;">
+        <img src="images/old-fashion.jpeg" class="card-img-top" alt="cocktails">
+        <div class="card-body">
+            <h5 class="card-title">{{name}}</h5>
+            <p class="card-text">{{glass}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <ol class="list-group-item">{{preparation}}</ol>
+            <ol class="list-group-item">{{garnish}}</ol>
+        </ul>
+        <div class="card-body">
+            <a href="#" class="card-link">Update</a>
+            <a href="/createCocktail" class="card-link">Delete</a>
+        </div>
+    </div>
+    {{/each}}
+</section>

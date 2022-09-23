@@ -1,0 +1,34 @@
+{{!-- <h1>Login</h1>
+<form action="/Login" method="post"> 
+<label for="username">User Name</label>
+<input type="text" name = "userName"/>
+<label for="password">Password</label>
+<input type="password" name="password"/>
+<button type="submit">Login</button>
+</form> --}}
+
+<section class="login">
+    <main class="form-signin w-100 m-auto">
+  <form action="/login" method="post">
+    <img class="mb-4" src="images/beer.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Login in</h1>
+
+    <div class="form-floating">
+      <input type="text" name="userName" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="username">User Name</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+   <a href="/cocktails"><button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button> </a> 
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+  </form>
+</main>
+</section>
